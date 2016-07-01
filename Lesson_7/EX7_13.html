@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Exercise 7.13 complete</title>
+		
+		<style>
+		
+		.mySVGfont {font-size:125px;
+			font-family:Tahoma;
+			color:yellow;
+			stroke:black;
+			stroke-width:2
+			}
+		
+		</style>
+		
+	</head>
+
+	<body>
+    
+   
+        <svg height="410px" width="615px">
+					
+			<image x="0" y="0" width="100%" height="100%" xlink:href="images/tropical-paradise.jpg" filter="url(#saturate)" />
+		
+	 
+			<ellipse cx="300" cy="300" rx="150" ry="50" style="fill:red;stroke:black;stroke-width:2" filter="url(#blur)" />
+            
+			<defs>
+				<filter id="blur">
+					<feGaussianBlur stdDeviation="2" />
+				</filter>
+				<filter id="saturate">
+					<feColorMatrix type="saturate" values="3.3" />
+				</filter>
+			</defs>
+			
+		</svg>
+           
+	</body>
+    
+</html>

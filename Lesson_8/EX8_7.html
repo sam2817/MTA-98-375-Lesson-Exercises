@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Exercise 8.7 complete</title>
+		<style>
+				#bottom,#top {
+					padding:5px;
+					text-align:center;
+					background-color:yellow;
+					border:1px solid black;
+					}
+				#bottom {
+					padding:50px;
+					display:none;
+					}
+		</style>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#top").click(function(){
+					$("#bottom").slideDown("slow");
+					});
+				});
+		</script>
+	</head>
+<body>
+	<div id="top">Click Me!</div>
+	<div id="bottom"><h1>jQuery Works!</h1></div>
+</body>
+</html>

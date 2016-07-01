@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Exercise 8.5 complete</title>
+
+	</head>
+	<body>   
+		<h1 id="demo" onclick="myFunction(4, 3)">HTML Event Attributes and Functions!</h1>
+		<h1 id="demo2">Event Listeners and Functions!</h1>
+		<h1 id="answer">Answer</h1>
+		<script>
+			document.getElementById("demo2").addEventListener("click", function() {myFunction(5,7);});
+			
+			function myFunction(a, b) {
+				var newValue;
+				newValue = a * b;
+				document.getElementById("answer").innerHTML = newValue;
+				}	
+		</script>
+</body>
+
+
+</html>

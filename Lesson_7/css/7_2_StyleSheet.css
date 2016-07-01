@@ -1,0 +1,51 @@
+* {padding:0px;
+	margin:0px;
+	text-align:center;
+	}
+
+#top_nav {
+	width:90%;
+	margin:auto;
+	}
+
+#home {
+	background: -webkit-linear-gradient(green, yellow);
+	background: linear-gradient(green, yellow);
+	}
+	
+#products {
+	background: -webkit-linear-gradient(right, green, yellow);
+	background: linear-gradient(to right, green, yellow);
+	}
+
+#services {
+	background: -webkit-linear-gradient(left, green, yellow);
+	background: linear-gradient(to left, green, yellow);
+	}
+	
+#contact {
+	background: -webkit-radial-gradient(circle, green, yellow, orange);
+	background: radial-gradient(closest-side at 25% 25%, green, yellow, orange);
+	height:200px;
+	line-height:200px;
+	}
+	
+	
+#about {
+	background: -webkit-repeating-linear-gradient(right, green, yellow 20%, orange 30%);
+	background:repeating-linear-gradient(to right, green, yellow 20%, orange 30%);
+	}
+
+div {
+		float: left;
+		height:50px;
+		width:200px;
+		margin:3px;	 	
+		border-radius:20px;
+		font-family: Tahoma;
+		line-height:50px;
+		color:white;
+		box-shadow: 10px 10px 5px grey;
+		text-shadow:3px 3px black;
+	}
+

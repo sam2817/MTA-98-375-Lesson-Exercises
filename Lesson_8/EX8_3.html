@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Exercise 8.3 complete</title>
+		<style>
+			.box {
+				height:200px;
+				width:200px;
+				line-height:200px;
+				color:red;
+				background:yellow;
+				text-align:center;
+				float:left;
+				margin:10px;
+			}
+			#container {
+				height:200px;
+				width:200px;
+				text-align:center;
+				margin-top:50px;
+				float:left;
+			}
+		</style>
+	</head>
+	<body> 
+		<div class="box" id="box1">
+				<h1>Box 1</h1>
+		</div>
+		
+		<div class="box" id="box2">
+				<h1>Box 2</h1>
+		</div>
+		
+		<div class="box" id="box3">
+				<h1>Box 3</h1>
+		</div>
+		<div id="container">   
+			<ul>
+				<li class="animal">cat</li>
+				<li id="vegetable">broccoli</li>
+				<li class="mineral">silver</li>
+			</ul>			
+		</div>
+		
+		<script>
+			document.getElementById('box1').innerHTML='<h1>Test</h1>';
+			document.getElementById('box2').style.color='green';
+			document.getElementById('box3').style.background='blue';
+			
+			document.getElementById('container').querySelector('li.animal').style.background='yellow';
+			document.getElementById('container').querySelector('li#vegetable').style.background='blue';
+			document.getElementById('container').querySelector('li.mineral').style.background='orange';
+		</script>
+		
+	</body>
+</html>

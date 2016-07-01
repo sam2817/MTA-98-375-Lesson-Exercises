@@ -1,0 +1,30 @@
+* {padding:0px;
+margin:0px;
+}
+
+
+div{
+		position:absolute;
+     	top:0px;
+	 	left:0px;
+		height:70px;
+		width:300px;
+		margin:3px;	 	
+		border-radius:20px;
+		font-family:tahoma;
+		font-size:50px;
+		line-height:50px;
+		text-align:center;
+		text-shadow:3px 3px black;
+		background:rgb(0, 255, 0);
+		opacity:.5;
+		color:#fff;
+		box-shadow: 10px 10px 5px grey;
+		text-shadow:3px 3px black;
+		z-index:1;
+	}
+
+img {position:absolute;
+      top:0px;
+	  left:0px;
+	  }

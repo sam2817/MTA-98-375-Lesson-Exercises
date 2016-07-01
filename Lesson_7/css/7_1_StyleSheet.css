@@ -1,0 +1,18 @@
+nav {
+	height:50px;
+	width:400px;
+	background:green;
+	font-family:Tahoma;
+	line-height:50px;
+	color:white;
+	text-align:center;
+	text-shadow:3px 3px black;
+	border-radius:15px 15px 200px 200px;
+	box-shadow:10px 10px 5px grey;
+	list-style-type:none;
+}
+
+nav > ul > li {
+	list-style-type:none;
+	padding:0;
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Exercise 8.2 complete</title>
+
+	</head>
+	<body> 	
+		<h1 id="price">The New Price goes Here!</h1>
+		
+		<h2 name="blah">blah</h2>
+		<h2 name="blah">blah</h2>
+		<h2 name="blah">blah</h2>
+		
+		<script>			
+			var price = 10;
+			var newPercent = 0.8;
+			var newPrice;
+			var displayPrice;
+			var newText = "surprise";
+			
+			newPrice = price * newPercent;
+			
+			displayPrice = "OLD PRICE: $" + price + "<br>New PRICE: $" + newPrice;
+			
+			document.getElementById("price").innerHTML = displayPrice;
+			
+			document.getElementsByName("blah").innerHTML = newText;
+			
+			
+		</script>
+	</body>
+</html>

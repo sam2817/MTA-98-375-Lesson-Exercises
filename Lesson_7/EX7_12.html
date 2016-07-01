@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Exercise 7.12 complete</title>
+        <style>
+			@keyframes myAnimation {
+				from {left:0px;}
+				to {left:500px;}
+				}
+			@-webkit-keyframes myAnimation /*Safari and Chrome*/ {
+				from {left:0px;}
+				to {left:500px;}
+				}
+
+
+#goingToAnimate { 
+				background:blue;
+				text-align:center;
+				line-height:100px;
+				color:yellow;
+				text-shadow:3px 3px black;
+				font-family:Tahoma;
+				border:1px solid black;
+				height: 150px;
+				width: 150px;
+				position:relative;
+				-webkit-animation:myAnimation 4s infinite alternate; /*Safari and Chrome*/
+				animation:myAnimation 4s infinite alternate;	
+				}
+
+        
+        </style>
+	</head>
+
+	<body>
+    	
+			<div id="goingToAnimate"><h1>CSS3</h1></div>
+	
+     
+	</body>
+    
+</html>
+

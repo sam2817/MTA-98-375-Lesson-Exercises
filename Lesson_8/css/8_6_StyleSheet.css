@@ -1,0 +1,34 @@
+section {margin-top:20px;}
+
+/*This styling block will create buttons if the "Create buttons" is clicked*/		
+#container{ 
+	height:75px;
+	width: 100px;
+	border-radius:15px;
+	box-shadow: 10px 10px 5px grey;
+	text-shadow:3px 3px black;
+	background: -webkit-linear-gradient(top, green, yellow);
+	background: linear-gradient(to top, green, yellow);
+	color:white;
+	font-family:Tahoma;
+	text-align:center;
+	float:left;
+	margin-left:20px;
+	margin-top:20px;
+	}
+	
+/* This styling block will provide a response if the user's cursor is placed on top of the buttons that were created */
+#container:hover{
+	-webkit-transform: translate(0px, 10px);
+	transform: translate(0px, 10px);
+	}
+
+/* This styling block will edit the appearance of the text of the id="textFullName" */
+#textFullName{
+	text-shadow:3px 3px black;
+	color:blue;
+	font-family:"Comic Sans MS";
+	float:left;
+	margin-left:20px;
+	margin-top:20px;
+}	

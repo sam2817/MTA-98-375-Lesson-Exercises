@@ -1,0 +1,49 @@
+* {
+	padding:0px;
+	margin:0px;
+	text-align:center;}
+
+#top_nav {  
+	width:90%;
+	margin:auto;
+	}
+			
+
+#home {
+	background: -webkit-radial-gradient(green, yellow);
+	background: radial-gradient(green, yellow);
+	}
+
+#products {
+	background: -webkit-radial-gradient(circle, red, yellow, green);
+	background: radial-gradient(circle, red, yellow, green);
+	}	
+	
+#services {
+	background: -webkit-radial-gradient(circle 50px, red, yellow, green);
+	background: radial-gradient(circle 50px, red, yellow, green);
+	}
+	
+#contact {
+	background: -webkit-radial-gradient(100px 50px, red, yellow, green);
+	background: radial-gradient(100px 50px, red, yellow, green);
+	}	
+	
+#about {
+	background: -webkit-repeating-radial-gradient(green, yellow 10%, orange 15%);
+	background: repeating-radial-gradient(green, yellow 10%, orange 15%);
+	}	
+	
+div{
+	float: left;
+	height:200px;
+	width:200px;
+	margin:3px;	 	
+	border-radius:20px;
+	font-family: Tahoma;
+	line-height:200px;
+	color:white;
+	box-shadow: 10px 10px 5px grey;
+	text-shadow:3px 3px black;
+	}
+

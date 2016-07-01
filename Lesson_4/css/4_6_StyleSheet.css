@@ -1,0 +1,17 @@
+li {
+	padding:15px;
+	display:inline;
+	}
+nav{
+	background:green;
+	width:800px;
+	margin:auto;
+	}
+#inner {
+	width:600px;
+	margin:auto;
+	background:red;
+	}
+a:link {color:white;}
+a:visited{color:white;}
+a:hover{color:black;}

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Title that Displays on the browser Tab</title>
+	</head>
+
+	<body>
+	</body>
+    
+</html>

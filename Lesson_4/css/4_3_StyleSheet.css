@@ -1,0 +1,13 @@
+section {
+	height:500px;
+	width:500px;
+	}
+#firstParagraph {
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:14px;
+	}
+.errorMessage {
+	font-weight:bold;
+	color:red;
+	font-style:italic;
+	}

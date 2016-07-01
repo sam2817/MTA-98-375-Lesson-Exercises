@@ -1,0 +1,16 @@
+.exclusion {
+	position: absolute;
+	top:200px;
+	left:300px;
+	background-color: rgba(255,255,0,0);
+	-ms-wrap-flow: both;
+	-ms-wrap-margin: 30px;
+	}
+#myContent {
+	float: left;
+	width:800px;
+	height:600px;
+	border:1px solid black;
+	padding:20px 20px;
+	overflow:hidden;
+	}

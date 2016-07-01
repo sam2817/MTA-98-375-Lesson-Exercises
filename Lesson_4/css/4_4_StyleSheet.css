@@ -1,0 +1,17 @@
+section{
+	height:500px;
+	width:500px;
+	}
+#firstParagraph{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:14px;
+	}
+p:first-line{
+	background:green;
+	color:white;
+	font-weight:bold;
+	}
+p:first-letter{
+	font-size:36px;
+	color:yellow;
+	}

@@ -1,0 +1,20 @@
+#text {
+	-ms-flow-into: text-flow;
+	}
+div {
+	-ms-flow-from:text-flow;
+	margin:10px;
+	border:2px solid black;
+	}
+#containerOne {
+	background: red;
+	}
+#containerTwo {
+	background: orange;
+	}
+#containerThree {
+	background: yellow;
+	}
+#containerFour {
+	background: green;
+	}	

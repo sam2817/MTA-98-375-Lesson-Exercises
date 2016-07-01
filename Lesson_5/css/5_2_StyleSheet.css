@@ -1,0 +1,27 @@
+		#container {
+					display:flex;
+                    flex-flow:row wrap;
+                  }
+
+        .firstTwo {
+					flex:2 1 100px;
+					background:blue;
+					border:1px solid black;
+					color:white;
+					font-size:large;
+					text-align:center;
+					padding:20px 20px 20px 20px;
+					margin:4px; 
+				}
+        
+    
+         .lastTwo {
+					flex:1 1 100px;
+					background:orange;
+					border:1px solid black;
+					color:white;
+					font-size:large;
+					text-align:center;
+					padding:20px 20px 20px 20px;
+					margin: 4px; 
+				}

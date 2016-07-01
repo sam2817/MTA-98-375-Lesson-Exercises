@@ -1,0 +1,44 @@
+ body {text-align:center;
+        }
+ 
+#grid {
+            border: 1px solid black;
+            background: yellow;
+            display: -ms-grid;
+            -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            -ms-grid-rows: 1fr;
+        }
+
+
+header {    -ms-grid-row: 1;
+            -ms-grid-column: 1;
+            background: green;
+            color: white;
+}
+
+#sectionOne { -ms-grid-row: 1;
+            -ms-grid-column: 2;
+            background: red;
+            color: white;
+}
+#sectionTwo { -ms-grid-row: 1;
+            -ms-grid-column: 3;
+            background: orange;
+            color: white;
+}
+#sectionThree { -ms-grid-row: 1;
+            -ms-grid-column: 4;
+            background: yellow;
+            color: white;
+}
+#sectionFour {  -ms-grid-row: 1;
+            -ms-grid-column: 5;
+            background: blue;
+            color: white;
+}
+
+footer {    -ms-grid-row: 1;
+            -ms-grid-column: 6;
+            background: purple;
+            color: white;
+}

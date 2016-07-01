@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<!--The following element indicates the name of the webpage-->
+<head>
+	<!--The following element represents character encoding standard-->
+	<meta charset="UTF-8">
+	<!--The following element prints the name of the webpage-->
+	<title>Exercise 2.5 complete</title>
+</head>
+<!--This element contains all of the content of the webpage-->
+<body>
+	<!--This particular element organizes content into a table format-->
+	<table border="9" background="http://www.color-hex.com/palettes/3648.png">
+		<!--This particular element creates a form for the developer to include input tags-->
+		<form action="demo_action.html" method="post" target="_blank">
+			<tr>
+				<th colspan="2">
+					<h1>Personal Information:</h1>
+				</th>
+			</tr>
+			<tr>
+				<td>First name:</td>
+				<!--This input tag lets the user input their first name in the cell-->
+				<td><input type="text" name="firstname" /></td>
+			</tr>
+			<tr>
+				<td>Last name:</td>
+				<!--This input tag lets the user input their last name in the cell-->
+				<td><input type="text" name="lastname" /></td>
+			</tr>
+			<tr>
+				<td>Email Address:</td>
+				<!--REQUIRED INPUT-->
+				<td><input type="email" name="email" required/></td>
+			</tr>	
+			<tr>
+				<td>Username:</td>
+				<!--REQUIRED INPUT-->
+				<td><input type="text" name="username" required/></td>
+			</tr>	
+			<tr>	
+				<td>Password:</td>
+				<!--REQUIRED INPUT-->
+				<!--This input tag lets the user input their password in the cell-->
+				<td><input type="password" name="password" required/></td>
+			</tr>
+			<tr>	
+				<td>Birthday:</td>
+				<!--This input tag lets the user input their birthday in the cell-->
+				<td><input type="date" name="bday" /></td>
+			</tr>
+			<tr>
+				<td>Gender:</td>
+				<!--This input tags let the user select which gender they identify as in the cell-->
+				<td>
+					<input type="radio" name="gender" value="Male" /> Male<br>
+					<input type="radio" name="gender" value="Female" /> Female<br>
+					<input type="radio" name="gender" value="Other" /> Other
+				</td>
+			</tr>
+			<tr>
+				<td>Vehicle Currently Owned:</td>
+				<!--This input tags let the user to check boxes for what vehicles does the user own in the cell-->
+				<td>
+					<input type="checkbox" name="vehicle" value="Car" /> Car<br>
+					<input type="checkbox" name="vehicle" value="Bike" /> Bike<br>
+					<input type="checkbox" name="vehicle" value="Motorcycle" /> Motorcycle
+				</td>
+			</tr>
+			<tr>
+				<td>Zodiac:</td>
+				<td>
+					<select name="Zodiac">
+						<option value="AR">Aries</option>
+						<option value="TA">Taurus</option>
+						<option value="GE">Gemini</option>
+						<option value="CA">Cancer</option>
+						<option value="LE">Leo</option>
+						<option value="VI">Virgo</option>
+						<option value="LI">Libra</option>
+						<option value="SC">Scorpio</option>
+						<option value="SA">Sagittarius</option>
+						<option value="CP">Capricorn</option>
+						<option value="AQ">Aquarius</option>
+						<option value="PI">Pisces</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Comments:</td>
+				<td><textarea rows="5" cols="40"></textarea></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Submit" /></td>
+			</tr>
+		</form>
+	</table>
+</body>
+</html>

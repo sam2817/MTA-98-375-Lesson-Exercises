@@ -1,0 +1,11 @@
+section {
+	height:300px;
+	width:800px;
+	border:1px solid black;
+	margin:auto;
+	}
+div {
+	float:right;
+	border:1px solid black;
+	width:120px;
+	}	

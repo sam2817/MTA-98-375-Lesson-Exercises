@@ -1,0 +1,79 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Exercise 2.5 complete</title>
+	</head>
+
+	<body>
+    	<form method="post">
+			<table cellpadding="10" border="1">
+				<tr>
+					<th colspan="2">Create Account Profile</th>
+				</tr>
+				<tr>
+					<td>First Name</td>
+					<td><input type="text" name="Fname" required></td>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td><input type="text" name="Lname" required></td>
+				</tr>
+				<tr>
+					<td>Email Address</td>
+					<td><input type="email" name="email" required></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="password" name="password" required></td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td>
+						<input type="radio" name="gender" value="Male" checked>Male <br>
+						<input type="radio" name="gender" value="Female">Female
+					</td>
+				</tr>
+				<tr>
+					<td valign="top">Interests</td>
+					<td>
+						<input type="checkbox" name="sport" value="Football">Football <br>
+						<input type="checkbox" name="sport" value="Baseball">Baseball<br>
+						<input type="checkbox" name="sport" value="Basketball">Basketball<br>
+						<input type="checkbox" name="sport" value="Track">Track<br>
+						<input type="checkbox" name="sport" value="Soccer">Soccer<br>
+						<input type="checkbox" name="sport" value="Hockey">Hockey<br>
+					</td>
+				</tr>
+				<tr>
+					<td>Favorite Team</td>
+					<td>
+						<select name="favoriteTeam">
+							<option value="Bears">Chicago Bears</option>
+							<option value="Bears">Chicago Bulls</option>
+							<option value="Bears">Chicago Cubs</option>
+							<option value="Bears">Chicago White Sox</option>
+							<option value="Bears">Chicago Blackhawks</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Comments</td>
+					<td>
+						<textarea name="comments" cols="50" rows="10"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<input type="submit" value="Submit">
+					</td>
+				</tr>
+			</table>
+		</form>
+       
+       
+	</body>
+    
+</html>

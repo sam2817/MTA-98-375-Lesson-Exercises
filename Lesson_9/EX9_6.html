@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Exercise 9.6 complete</title>
+		
+	</head>
+	<body> 	
+      <div id="main">
+      		
+			<canvas id="myCanvas" width="800" height="250" style="border:1px solid #d3d3d3;">
+				Your browser does not support the HTML5 canvas tag.
+			</canvas>
+			<script>
+				var c=document.getElementById("myCanvas");
+				var ctx=c.getContext("2d");
+				
+				ctx.font="90px Tahoma";
+				
+				ctx.fillStyle="blue";
+				ctx.fillText("Blue fillText!",10,100);
+				
+				ctx.strokeStyle="red";
+				ctx.strokeText("Red strokeText!",10,200);
+			</script>
+	  </div>	    
+    </body>
+</html>

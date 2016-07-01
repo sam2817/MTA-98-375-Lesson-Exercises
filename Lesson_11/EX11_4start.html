@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<title>Lesson 11 EX 11.4</title>
+       <script>
+      function bigLoop(){
+         for (var i = 0; i <= 2000000000; i += 1){
+            var j = i;
+         }
+         alert("Non Web Worker Completed " + j + "iterations" );
+      }
+	  
+	  function sayHello(){
+         alert("Hello" );
+      }
+  </script>
+</head>
+<body>
+
+	<input type="button" onClick="bigLoop();" value="Big Loop" />
+   <input type="button" onClick="" value="Worker Big Loop" />
+   <input type="button" onClick="sayHello();" value="Say Hello" />
+
+</body>
+</html>

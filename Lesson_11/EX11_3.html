@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<title>Exercise 11.3 complete</title>
+</head>
+<body>
+
+<p id="status">Click the button below to view your Geolocation information:</p>
+
+<button onClick="getLocation()">Get My Location</button>
+
+<script>
+	var status = document.getElementById("status");
+	function getLocation() {
+		if (navigator.geolocation) {
+		status.innerHTML = "Geolocation is supported by this browser.";
+		alert("Geolocation is Supported");
+		}
+		else {
+		status.innerHTML = "Geolocation is not supported by this browser.";
+		alert("Geolocation is NOT supported");
+		}
+	}
+	function showPosition(position) {
+		var d = new Date(position.timestamp);
+		status.innerHTML="Latitude: " + position.coords.latitude
+		+ "<br>Longitude: " +position.coords.longitude
+		+ "<br>Accuracy: " + position.coords.accuracy
+		+ "<br>Altitude meters above mean sea level: " + position.coords.altitude
+		+ "<br>altitudeAccuracy: " + position.coords.altitudeAccuracy
+		+ "<br>Heading degrees clockwise from North: " + position.coords.heading
+		+ "<br>Speed in Meters/sec : " + position.coords.speed
+		+ "<br>TimeStamp: " + d.toLocaleString();
+	}
+
+</script>
+
+</body>
+</html>

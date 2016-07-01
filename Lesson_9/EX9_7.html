@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Exercise 9.7 complete</title>
+		<script>
+			function init(){
+				var c=document.getElementById("myCanvas");
+				var ctx=c.getContext("2d");
+				var img=document.getElementById("myImage");
+				ctx.drawImage(img,75,75);
+			}
+			window.onload = init;
+		</script>
+	</head>
+	<body> 
+	
+	  <img id="myImage" src="images/HTML5_Logo_50.png" />
+	  
+      <div id="main">
+      		
+			<canvas id="myCanvas" width="200" height="200" style="border:1px solid #d3d3d3;">
+				Your browser does not support the HTML5 canvas tag.
+			</canvas>
+
+			
+	  </div>	
+		
+    </body>
+</html>

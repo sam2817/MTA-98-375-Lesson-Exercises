@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise 11.4 complete</title>
+		<script>
+			function bigLoop() {
+				for (var i = 0; i <= 2000000000; i += 1){
+					var j = i;
+				}
+				alert("Non Web Worker Completed " + j + "iterations" );
+			}
+			function workerBigLoop(){
+				var worker = new Worker('bigLoop.js');
+				worker.onmessage = function (event) {
+				alert("Web Worker has Completed " + event.data + "iterations" );
+				};
+			}
+			function sayHello(){
+				alert("Hello" );
+			}
+		</script>
+</head>
+<body>
+	<input type="button" onClick="bigLoop();" value="Big Loop" />
+	<input type="button" onClick="workerBigLoop();" value="Worker Big Loop" />
+	<input type="button" onClick="sayHello();" value="Say Hello" />
+</body>
+</html>

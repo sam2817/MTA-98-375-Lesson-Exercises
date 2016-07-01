@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Exercise 9.2 complete</title>
+	</head>
+	<body> 	
+      <div id="main">
+			<canvas id="myCanvas" width="200" height="200" style="border:1px solid black;">
+			       If you see this Text your browser does not support the HTML5 canvas element! Install IE 11 or Google Chrome
+			</canvas>
+			<script>
+				var canvasElement = document.getElementById("myCanvas");
+				var canvasContext = canvasElement.getContext("2d");
+				canvasContext.fillStyle = "blue";
+				canvasContext.fillRect(30,30,100,100);
+				canvasContext.fillStyle = "red";
+				canvasContext.fillRect(50,50,100,100);
+				canvasContext.shadowBlur=20;
+				canvasContext.shadowColor="black";
+				canvasContext.fillStyle = "yellow";
+				canvasContext.fillRect(75,75,100,100);
+			</script>
+	  </div>	    
+    </body>
+</html>

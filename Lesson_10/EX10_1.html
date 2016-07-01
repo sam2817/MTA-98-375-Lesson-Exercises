@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Exercise 10.1 complete</title>
+		</head>
+		
+	<body>
+		<script>
+			//Creates and Sends the Request
+			xmlhttp=new XMLHttpRequest();
+			xmlhttp.open("GET","http://content.ccilearning.com/MTA/8375_HTML5/books.xml",false);
+			xmlhttp.send();
+			//Parse the Response
+			xmlDocument=xmlhttp.responseXML;
+			//Create a Variable X that represents the <book> element in the XML file
+			var x=xmlDocument.getElementsByTagName("book");
+			//Get the Title data from the XML response and write it to the HTML document
+			for (i=0;i<x.length;i++) {
+				document.write(x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue);
+				document.write("<br>");
+				document.write(x[i].getElementsByTagName("description")[0].childNodes[0].nodeValue);
+				document.write("<br>");
+				document.write(x[i].getElementsByTagName("author")[0].childNodes[0].nodeValue);
+				document.write("<br>");
+				document.write(x[i].getElementsByTagName("genre")[0].childNodes[0].nodeValue);
+				document.write("<br>");
+				document.write(x[i].getElementsByTagName("publish_date")[0].childNodes[0].nodeValue);
+				document.write("<br>");
+				document.write(x[i].getElementsByTagName("price")[0].childNodes[0].nodeValue);
+				document.write("<br><br>");
+			}
+		</script>
+		
+	</body>
+</html>

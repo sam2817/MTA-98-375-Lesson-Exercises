@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<script>
+
+			function drawClock() {
+
+				var c=document.getElementById("myCanvas");
+				var g=c.getContext("2d");
+
+				// Calculate position of clock objects...
+				var clockWidth = myCanvas.width;
+				var clockCenterX = clockWidth / 2;
+				var clockCenterY = clockWidth / 2;
+				var hourLen = clockWidth / 2 * 0.7;
+				var minLen = clockWidth  / 2 * 0.6;
+				var secLen = clockWidth  / 2 * 0.5;
+
+				var K = -1*(Math.PI * 2.0) / 4;
+
+					// Draw background ...
+					g.fillStyle="#ffffff";
+					g.fillRect(0,0,clockWidth,clockWidth);
+
+					// Draw circle for clock ...
+					g.beginPath();
+					g.strokeStyle = 'yellow';
+					g.arc(clockCenterX,clockCenterY,clockWidth/2 * 0.9,0,2*Math.PI);
+					g.stroke();
+
+				// Get time ...
+				var date = new Date;
+				var seconds = date.getSeconds();
+				var minutes = date.getMinutes();
+				var hour = date.getHours() ;
+
+				var divTime = document.getElementById("divTime");
+				divTime.innerText = "The time is " + hour+":" +minutes+ ":"+seconds;
+
+				// Draw Hour Glass ...
+
+				// Calculate Hour X, Y
+				var hourAngleUnit = (Math.PI * 2.0) / 12.0;
+				var hourX = hourLen * Math.cos(hour * hourAngleUnit + K)  + clockCenterX;
+				var hourY = hourLen * Math.sin(hour * hourAngleUnit + K)  + clockCenterY;
+					g.beginPath();
+					g.lineWidth=5;
+					g.strokeStyle = 'orange';
+					g.moveTo(clockCenterX, clockCenterY);
+					g.lineTo(hourX, hourY);
+					g.stroke();
+
+				// Draw Minutes ...
+				var minuteAngleUnit = (Math.PI * 2.0) / 60.0;
+				var minX = minLen * Math.cos(minutes * minuteAngleUnit + K)  + clockCenterX;
+				var minY = minLen * Math.sin(minutes * minuteAngleUnit + K)  + clockCenterY;
+					g.beginPath();
+					g.strokeStyle = '#00ff00';
+					g.moveTo(clockCenterX, clockCenterY);
+					g.lineTo(minX, minY);
+					g.stroke();
+
+				// Draw Seconds ...
+				var secondAngleUnit = (Math.PI*2.0) / 60.0;
+				var secX = secLen * Math.cos(seconds * secondAngleUnit + K) + clockCenterX;
+				var secY = secLen * Math.sin(seconds * secondAngleUnit + K) + clockCenterY;
+					g.beginPath();
+					g.strokeStyle = '#0000ff';
+					g.moveTo(clockCenterX, clockCenterY);
+					g.lineTo(secX, secY);
+					g.stroke();
+
+				setTimeout(drawClock, 1000);
+
+			}
+
+			function bodyOnLoad() {   
+				drawClock();
+			}
+		</script>
+</head>
+<body onload="bodyOnLoad()">
+    <canvas id="myCanvas" width="400" height="400" style="border:1px solid black">
+		Your browser does not support the HTML5 canvas tag.
+    </canvas>
+    <div id="divTime"></div>
+</body>
+</html>

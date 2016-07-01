@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Exercise 9.5 complete</title>
+	</head>
+	<body> 	
+      <div id="main">
+      		
+			<canvas id="myCanvas" width="400" height="400" style="border:1px solid black;">
+			       If you see this Text your browser does not support the HTML5 canvas element! Install IE 11 or Google Chrome
+			</canvas>
+			<script>
+				var cnvs = document.getElementById("myCanvas");
+				var cntx = cnvs.getContext("2d");
+				
+				// Create gradient
+				var grdRad = cntx.createRadialGradient(300,300,15,300,300,150);
+				grdRad.addColorStop(0,"red");
+				grdRad.addColorStop(1,"blue");
+				cntx.fillStyle = grdRad;
+				cntx.fillRect(200,200,200,200);
+				
+				var grd = cntx.createLinearGradient(0,200,0,0);
+				grd.addColorStop(0,"green");
+				grd.addColorStop("0.2","orange");
+				grd.addColorStop("0.4","yellow");
+				grd.addColorStop("0.6","red");
+				grd.addColorStop("0.8","blue");
+				grd.addColorStop(1,"purple");
+				
+				// Fill with gradient
+				cntx.fillStyle = grd;
+				cntx.fillRect(0,0,200,200);
+			</script>
+			
+	  </div>	    
+    </body>
+</html>

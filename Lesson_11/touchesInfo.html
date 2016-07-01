@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Touch Events</title>
+    <style>
+	
+		#box1 {
+			border:1px solid black;
+			background:yellow;
+			width:100px;
+			
+			text-align:center;}
+	
+	</style>
+	<script>
+		window.addEventListener('load',
+			function(){
+				var box1 = document.getElementById('box1')
+				var statusdiv = document.getElementById('statusdiv')
+				var startx = 0
+				var dist = 0
+				
+				box1.addEventListener('touchstart',
+					function(e) {
+						var touchobj = e.changedTouches[0] // reference first touch point (ie: first finger)
+						startx = parseInt(touchobj.clientX) // get x position of touch point relative to left edge of browser
+						statusdiv.innerHTML = 'Status: touchstart<br /> ClientX: ' + startx + 'px ClientY: ' + touchobj.clientY + '<br />' 
+						document.getElementById('Page').innerHTML = 'PageX: ' + touchobj.pageX + 'px PageY: ' + touchobj.pageY + '<br />'
+						document.getElementById('Screen').innerHTML = 'ScreenX: ' + touchobj.screenX + 'px ScreenY: ' + touchobj.screenY + '<br />'
+						document.getElementById('target').innerHTML = 'Target: ' + touchobj.target 
+						document.getElementById('touchID').innerHTML = 'Identifier: ' + touchobj.identifier
+						e.preventDefault()
+					},
+				false)
+
+				box1.addEventListener('touchmove', 
+					function(e) {
+						var touchobj = e.touches[0] // reference first touch point for this event
+						var dist = parseInt(touchobj.clientX) - startx
+						statusdiv.innerHTML = 'Status: touchmove<br /> Horizontal distance traveled: ' + dist + 'px'
+						e.preventDefault()
+					},
+				false)
+
+				box1.addEventListener('touchend',
+					function(e) {
+						var touchobj = e.touches[0] // reference first touch point for this event
+						statusdiv.innerHTML = 'Status: touchend<br /> Resting x coordinate: ' + touchobj.clientX + 'px'
+						e.preventDefault()
+					},
+				false)
+			},
+		false)
+	</script>
+</head>
+<body>
+	<div class="box" id="box1">
+		<h3> Touch Me! </h3>
+	</div>
+
+		<h5 id="statusdiv">Status</h5>
+		<h3 id="Page"></h3>
+		<h3 id="Screen"></h3>
+		<h3 id="target"></h3>
+		<h3 id="touchID"></h3>
+</body>
+</html>

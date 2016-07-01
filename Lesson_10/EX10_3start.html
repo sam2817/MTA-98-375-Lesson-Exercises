@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson 10 EX 10.3</title>
+    <meta charset="UTF-8">
+	<style>
+	div{
+		text-align:center;
+		height:50px;
+		width:200px;
+		margin:3px;	 	
+		border-radius:20px;
+		font-family: Tahoma;
+		line-height:50px;
+		color:white;
+		box-shadow: 10px 10px 5px grey;
+		text-shadow:3px 3px black;
+		margin-bottom:10px;
+	}
+
+.buttons {		
+		background: -webkit-linear-gradient(green, yellow);
+		background: linear-gradient(green, yellow);
+	</style>
+	</head>
+	<body> 
+    	<h1 id="mySession">Session Storage Not Set</h1>
+	 	<h1 id="rememberMe"></h1> 
+		 	  
+	 	<table>
+			<tr>
+				<td>
+					First Name:
+				</td>
+				<td>
+					<input type="text" id="txtFName" required />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Last Name:
+				</td>
+				<td>
+					<input type="text" id="txtLName" required />
+				</td>
+			</tr>
+			
+		</table>
+		
+	  <div class="buttons" onclick="login()">
+            	<h1>Login</h1>
+            </div>	
+
+	  <div class="buttons" onclick="logout()">
+            	<h1>Logout</h1>
+	  </div>	
+	  <div class="buttons" onclick="clearLocal()">
+            	<h1>Clear</h1>
+     </div>
+	 
+    <script>
+		//Check to see if Local Storage is set
+		if (localStorage.getItem("firstName") == null){	
+		document.getElementById("rememberMe").innerHTML = "I Don't Remember you from Local Storage";
+		}
+		else
+		{document.getElementById("rememberMe").innerHTML = "Welcome Back "+localStorage.getItem("firstName");}
+
+		//Check to see if Session Storage is set
+		if (sessionStorage.getItem("lastName") == null){	
+		document.getElementById("mySession").innerHTML = "Session Not Set";
+		}
+		else
+		{document.getElementById("mySession").innerHTML = sessionStorage.getItem("lastName")+" is Logged in!";}
+
+
+		
+	</script>
+  </body>
+</html>

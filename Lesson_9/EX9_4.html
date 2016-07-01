@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Exercise 9.4 complete</title>
+	</head>
+	<body> 	
+      <div id="main">
+      		
+			<canvas id="myCanvas" width="200" height="200" style="border:1px solid black;">
+			       If you see this Text your browser does not support the HTML5 canvas element! Install IE 11 or Google Chrome
+			</canvas>
+
+			<script>
+
+				var cnvs = document.getElementById("myCanvas");
+				var cntx = cnvs.getContext("2d");
+									
+				cntx.lineCap = "round";
+				cntx.lineWidth="15";
+				cntx.strokeStyle="green"; 	
+				cntx.moveTo(15,100);
+				cntx.lineTo(185,100);
+				cntx.stroke();
+				
+				cntx.beginPath();
+				cntx.lineWidth="5";
+				cntx.strokeStyle="red";
+				cntx.arc(100, 100, 75, 0, 2*Math.PI);
+				cntx.stroke();
+				
+			</script>
+	  </div>	    
+    </body>
+</html>
